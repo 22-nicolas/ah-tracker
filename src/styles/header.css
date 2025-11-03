@@ -1,0 +1,34 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2ch;
+    padding-right: 2ch;
+    border-bottom: #353333 1px solid;
+}
+
+.right-header, .left-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.refresh-btn{
+    border: none;
+    border-radius: 2.5ch;
+    background-color: #2e2d2d;
+    cursor: pointer;
+}
+
+.refresh-btn:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 5px black;
+}
+
+.refresh-btn:active{
+    transform: scale(0.9);
+}
+
+img{
+    height: 5ch;
+}

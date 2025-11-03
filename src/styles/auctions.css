@@ -1,0 +1,10 @@
+.auction-list{
+    display: grid;
+    gap: 1ch;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /*grid-template-rows: 20ch;*/
+}
+
+.price{
+    color: green;
+}
