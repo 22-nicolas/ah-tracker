@@ -15,6 +15,7 @@ function AuctionsList() {
 
     useEffect(() => {
         setRefreshCallback(refresh);
+        refresh();
     }, [])
 
     return(
