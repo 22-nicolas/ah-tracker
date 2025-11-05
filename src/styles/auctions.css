@@ -2,7 +2,15 @@
     display: grid;
     gap: 1ch;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 1ch;
     /*grid-template-rows: 20ch;*/
+}
+
+.auction{
+    border-radius: 10px;
+    border: 1px solid #353333;
+    padding: 1ch;
+    box-shadow: 1px 1px 5px black;
 }
 
 .price{

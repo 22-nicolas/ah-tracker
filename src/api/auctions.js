@@ -6,5 +6,6 @@ export async function getAuctions() {
     for (let i = 0; i < auctions.length; i++) {
         auctions[i].id = i
     }
+    console.log(auctions)
     return auctions
 }
