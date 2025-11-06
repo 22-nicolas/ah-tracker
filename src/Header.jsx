@@ -1,7 +1,7 @@
 import './styles/header.css'
 import logo from './assets/logo.png'
 import refreshSvg from './assets/refresh.svg'
-import { triggerRefresh } from './modules/auctionEvents.js'
+import { fireRefreshEvent } from './modules/refreshEvent.js'
 
 function Header() {
     return(
@@ -31,7 +31,7 @@ function LeftHeader() {
 
 function RefreshButton() {
     return(
-        <button onClick={triggerRefresh} className='refresh-btn'>
+        <button onClick={fireRefreshEvent} className='refresh-btn'>
             <img src={refreshSvg} alt="reload" /> 
         </button>
     )

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import './styles/auctions.css'
-import { setRefreshCallback } from './modules/auctionEvents.js';
+import { suscribeToRefreshBtn } from './modules/refreshEvent.js';
 import { getAuctions } from './api/auctions.js';
 import { useEffect, useState } from "react";
 import { getColor } from './modules/getRarityColor.js';
@@ -15,7 +15,7 @@ function AuctionsList() {
     }
 
     useEffect(() => {
-        setRefreshCallback(refresh);
+        suscribeToRefreshBtn(refresh);
         refresh();
     }, [])
 
